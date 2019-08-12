@@ -1,0 +1,61 @@
+Arguments: 
+  /usr/bin/node /usr/bin/yarn add cypress --dev
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+Yarn version: 
+  1.17.3
+
+Node version: 
+  10.16.2
+
+Platform: 
+  linux x64
+
+Trace: 
+  Error: EACCES: permission denied, mkdir '/home/tuananh/Desktop/Homework-IBC/node_modules/cypress/node_modules/ansi-styles'
+
+npm manifest: 
+  {
+    "name": "homework-ibc",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+      "watch-ts": "tsc -w",
+      "watch-node": "nodemon dist/server.js",
+      "watch": "concurrently -k -p \"[{name}]\" -n \"TypeScript, Node\" -c \"yello.bold, cyan.bold\" \"yarn run watch-ts\" \"yarn run watch-node\"",
+      "cypress:open": "./node_modules/.bin/cypress open"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@types/express": "^4.17.0",
+      "concurrently": "^4.1.1",
+      "cypress": "^3.4.1",
+      "express": "^4.17.1",
+      "nodemon": "^1.19.1"
+    },
+    "dependencies": {
+      "@types/cookie-session": "^2.0.37",
+      "@types/mongoose": "^5.5.12",
+      "@types/node": "^12.7.1",
+      "@types/passport": "^1.0.0",
+      "@types/passport-facebook": "^2.1.9",
+      "@types/request-promise": "^4.1.44",
+      "cookie-session": "^1.3.3",
+      "mongoose": "^5.6.9",
+      "passport": "^0.4.0",
+      "passport-facebook": "^3.0.0",
+      "request": "^2.88.0",
+      "request-promise": "^4.2.4",
+      "typescript": "^3.5.3"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
