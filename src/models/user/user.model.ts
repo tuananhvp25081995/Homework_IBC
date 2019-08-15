@@ -9,9 +9,9 @@ const UserSchema = new mongoose.Schema({
   gender: String,
   fb_username: String,
   email: String,
-  created: {type: Date, default: Date.now}
+  created: { type: Date, default: Date.now }
 });
 
-const User = mongoose.model('User', UserSchema , 'users');
+const User = mongoose.model('User', UserSchema, 'users');
 
-export default User ;
+export { User };

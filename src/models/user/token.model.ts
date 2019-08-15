@@ -5,6 +5,6 @@ const tokenSchema = new mongoose.Schema({
   id: { type: String, default: "" }
 });
 
-const Token = mongoose.model('Token', tokenSchema , 'tokens');
+const Token = mongoose.model('Token', tokenSchema, 'tokens');
 
-export default Token ;
+export { Token };
